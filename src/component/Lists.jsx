@@ -1,6 +1,7 @@
-import { createElement } from "react";
-
 const Lists = () => {
-  <></>;
+    return (
+        <>
+        </>
+ )
 };
 export default Lists;

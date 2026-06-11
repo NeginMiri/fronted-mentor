@@ -1,8 +1,9 @@
 @import "tailwindcss";
-body{
+body {
   height: 100vh;
+  background-color: #09153e;
 }
 
-:root{
+:root {
   height: 100%;
 }
