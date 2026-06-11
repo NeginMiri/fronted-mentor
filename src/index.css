@@ -2,14 +2,17 @@
 body {
   height: 100vh;
   background-color: #09153e;
-<<<<<<< HEAD
   padding-top: 50px;
   padding-bottom: 50px;
   
-=======
->>>>>>> 3dd1521e53abe418aa60a85f56655f1ab38eee24
 }
 
 :root {
   height: 100%;
+}
+@theme{
+  --color-bg-100:#f25c54;
+  --color-bg-200:#545969;
+  --color-bg-300:hsl(225, 23%, 24%);
+  --color-tx-100:#ededed;
 }
