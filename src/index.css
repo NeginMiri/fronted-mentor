@@ -1,12 +1,15 @@
 @import "tailwindcss";
-body{
+body {
   height: 100vh;
   background-color: #09153e;
+<<<<<<< HEAD
   padding-top: 50px;
   padding-bottom: 50px;
   
+=======
+>>>>>>> 3dd1521e53abe418aa60a85f56655f1ab38eee24
 }
 
-:root{
+:root {
   height: 100%;
 }
