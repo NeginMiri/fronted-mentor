@@ -14,9 +14,11 @@ body {
   --color-bg-200:#545969;
   --color-bg-300:hsl(225, 23%, 24%);
   --color-tx-100:#ededed;
-   --color-bg-300:#2f364b;
+   --color-bg-400:hsl(225, 23%, 24%);
+   --color-bg-500:hsl(226, 11%, 37%);
+   --color-bg-600:#000;
    --color-tx-400: #d6e2f5;
-  
+  --color-tx-500:hsl(217, 61%, 90%);
 
 ;
 }

@@ -7,14 +7,16 @@ import Header from "./component/Header";
 
 import Lists from "./component/Lists";
 import Footer from "./component/Footer";
+import Items from "./component/items";
 
 function App() {
-  const [count, setCount] = useState(0);
+  
 
   return (
     <>
       <Header />
       <Lists />
+      <Items />
       <Footer />
     </>
   );
