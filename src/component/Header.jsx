@@ -4,7 +4,7 @@ const Header = () => {
       <div className="w-full pl-[150px]">
         <header className="w-[1230px] h-[107px] bg-bg-300 rounded-[20px] flex justi items-center px-[30px] justify-between">
           <h1 className=" text-white text-2xl font-bold">Extension</h1>
-          <button className="w-[65px] h-[60px] bg-bg-200 rounded-[15px] justify-center items-center flex  focus:bg-bg-100 text-tx-100  hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100">
+          <button className="w-[65px] h-[60px] bg-bg-200 rounded-[15px] justify-center items-center flex  focus:bg-bg-100 text-tx-100  hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="moon-img"
