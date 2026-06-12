@@ -4,7 +4,6 @@ body {
   background-color: #09153e;
   padding-top: 50px;
   padding-bottom: 50px;
-  
 }
 
 :root {
@@ -15,4 +14,6 @@ body {
   --color-bg-200:#545969;
   --color-bg-300:hsl(225, 23%, 24%);
   --color-tx-100:#ededed;
+   --color-bg-300:#2f364b
+;
 }

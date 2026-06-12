@@ -4,8 +4,9 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import Header from "./component/Header";
 
-import Footer from "./component/Footer";
+
 import Lists from "./component/Lists";
+import Footer from "./component/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
