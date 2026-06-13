@@ -16,7 +16,9 @@ const Footer = () => {
         <h1 className="flex text text-[22px] text-tx-400 mr-1.5">
           Designed by
         </h1>
-        <a>Fronted Mentor</a>
+        <a className="flex text text-[22px] text-white mr-1.5">
+          Fronted Mentor
+        </a>
       </div>
     </>
   );
