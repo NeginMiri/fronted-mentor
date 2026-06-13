@@ -106,7 +106,7 @@ const Items = () => {
       {cards.map((item) => {
         return (
           <div
-            key={item.id}
+            
             className="flex flex-col rounded-[30px] bg-bg-400 p-[24px] w-[400px]"
           >
             <div className="flex gap-3">
