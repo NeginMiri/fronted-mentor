@@ -1,22 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
+
 import Header from "./component/Header";
-
-
 import Lists from "./component/Lists";
 import Footer from "./component/Footer";
 import Items from "./component/items";
+import { useState } from "react";
 
 function App() {
-  
+  const [filter, setFilter] = useState("all");
 
   return (
     <>
       <Header />
-      <Lists />
-      <Items />
+      <Lists setFilter={setFilter} />
+      <Items filter={filter} />
       <Footer />
     </>
   );

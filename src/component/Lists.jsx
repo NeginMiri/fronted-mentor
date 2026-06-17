@@ -1,6 +1,6 @@
 
 
-const Lists = () => {
+const Lists = ({setFilter}) => {
   
   return (
     <>
@@ -11,13 +11,19 @@ const Lists = () => {
             <span>(12)</span>
           </h1>
           <div className="flex gap-3">
-            <button className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] h-[48px] w-[65px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
+            <button onClick={()=>{
+              setFilter("all");
+            }} className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] h-[48px] w-[65px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
               All
             </button>
-            <button className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] w-[123px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
+            <button onClick={()=>{
+              setFilter("active");
+            }} className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] w-[123px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
               Active <span>(8)</span>
             </button>
-            <button className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] w-[140px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
+            <button onClick={()=>{
+              setFilter("inactive")
+            }} className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] w-[140px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
               Inactive <span>(4)</span>
             </button>
           </div>
