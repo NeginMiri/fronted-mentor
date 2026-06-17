@@ -1,7 +1,8 @@
 
 
-const Lists = ({setFilter}) => {
-  
+const Lists = ({ setFilter, filter, cards }) => {
+  const active = cards.filter((i) => i.isActive);
+  const inactive = cards.filter((i) => !i.isActive);
   return (
     <>
       <div className="flex flex-col">
@@ -11,24 +12,32 @@ const Lists = ({setFilter}) => {
             <span>(12)</span>
           </h1>
           <div className="flex gap-3">
-            <button onClick={()=>{
-              setFilter("all");
-            }} className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] h-[48px] w-[65px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
-              All
+            <button
+              onClick={() => {
+                setFilter("all");
+              }}
+              className={` text-tx-100 rounded-[60px] px-4 py-2 hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ${filter === "all" ? "bg-bg-100" : "bg-bg-200"}`}
+            >
+              All ({cards.length})
             </button>
-            <button onClick={()=>{
-              setFilter("active");
-            }} className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] w-[123px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
-              Active <span>(8)</span>
+            <button
+              onClick={() => {
+                setFilter("active");
+              }}
+              className={` text-tx-100 rounded-[60px] px-4 py-2 hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ${filter === "active" ? "bg-bg-100" : "bg-bg-200"}`}
+            >
+              Active <span>({active.length})</span>
             </button>
-            <button onClick={()=>{
-              setFilter("inactive")
-            }} className="focus:bg-bg-100 text-tx-100 bg-bg-200 rounded-[60px] w-[140px] hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ">
-              Inactive <span>(4)</span>
+            <button
+              onClick={() => {
+                setFilter("inactive");
+              }}
+              className={` text-tx-100 rounded-[60px] px-4 py-2 hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ${filter === "inactive" ? "bg-bg-100" : "bg-bg-200"}`}
+            >
+              Inactive <span>({inactive.length})</span>
             </button>
           </div>
         </div>
-      
       </div>
       <div className="hidden fixed top-0 left-0 bg-bg-600/70 w-[100%] h-[100%] z-1 flex justify-center items-center">
         <div className="flex flex-col gap-2   justify-center items-center bg-bg-400 w-[575px] h-[155px] rounded-[30px] border-3 border-bg-100">
