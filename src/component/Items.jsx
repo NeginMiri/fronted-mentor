@@ -21,11 +21,11 @@ const Items = ({ filter ,cards,setCards}) => {
    ) )))
   }
   return (
-    <section className="grid grid-cols-3 gap-4 ">
+    <section className="grid grid-cols-3 gap-4 pl-30 pb-20">
       {filterItem.map((item) => (
         <div
           key={item.id}
-          className="flex flex-col rounded-[30px] bg-bg-400 p-[24px] "
+          className="flex flex-col rounded-[30px] w-[400px] h-[235px] bg-bg-400 p-[24px] "
         >
           <div className="flex gap-3">
             <img className="w-[60px] h-[60px] pt-2" src={item.logo} />

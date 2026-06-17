@@ -16,7 +16,7 @@ const Lists = ({ setFilter, filter, cards }) => {
               onClick={() => {
                 setFilter("all");
               }}
-              className={` text-tx-100 rounded-[60px] px-4 py-2 hover:bg-bg-300 cursor-pointer hover:border-3 hover:border-bg-100 ${filter === "all" ? "bg-bg-100" : "bg-bg-200"}`}
+              className={` text-tx-100 rounded-[60px] px-4 py-2  cursor-pointer hover:border-3 hover:border-bg-100 ${filter === "all" ? "bg-bg-100 " : "bg-bg-200"}`}
             >
               All ({cards.length})
             </button>
@@ -39,7 +39,7 @@ const Lists = ({ setFilter, filter, cards }) => {
           </div>
         </div>
       </div>
-      <div className="hidden fixed top-0 left-0 bg-bg-600/70 w-[100%] h-[100%] z-1 flex justify-center items-center">
+      {/* <div className="hidden fixed top-0 left-0 bg-bg-600/70 w-[100%] h-[100%] z-1 flex justify-center items-center">
         <div className="flex flex-col gap-2   justify-center items-center bg-bg-400 w-[575px] h-[155px] rounded-[30px] border-3 border-bg-100">
           <h3 className="text-[21px] text-white font-bold">
             Are you sure you want to remove this extension?
@@ -53,7 +53,7 @@ const Lists = ({ setFilter, filter, cards }) => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
